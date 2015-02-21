@@ -1,0 +1,14 @@
+.row
+  for extract, slug in public.extracts._data
+    .col-md-4.col-sm-6
+      .extract-card
+        .content
+          a(href="/extracts/#{ slug }" class="#{ current.source == slug ? 'active' : '' }")
+            blockquote
+              p
+                = extract.content
+          hr
+        .caption
+          a(href="#{extract.link}" target="_blank")
+            =extract.title
+
