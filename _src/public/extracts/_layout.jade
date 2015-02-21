@@ -4,9 +4,9 @@ block content_left
   h4 This is a block in items layout
   ul.nav.nav-pills.nav-stacked
     li(class="#{ current.source == 'index' ? 'active' : '' }")
-      a(href="/items")
+      a(href="items")
         | Index items
     for item, slug in public.items._data
       li(class="#{ current.source == slug ? 'active' : '' }")
-        a(href="/items/#{ slug }")
+        a(href="items/#{ slug }")
           =item.title
