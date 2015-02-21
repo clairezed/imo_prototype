@@ -1,0 +1,44 @@
+body
+  padding-top: 70px
+  background-color: #eee
+
+
+header
+  .navbar-right
+    margin-right: 0
+
+.main-sidebar
+  background-color: lighten($brand-primary, 10%)
+  height: 100%
+  position: fixed
+  padding: 0
+  left: 0
+  top: 0
+  padding-top: 51px
+  width: $main-sidebar-width
+  .nav>li>a:hover, .nav>li>a:focus
+    background-color: $brand-primary
+  a
+    height: $main-sidebar-width
+    color: #fff
+  .glyphicon
+    line-height: 2
+    left: 3px
+
+.body-container
+  padding-left: $main-sidebar-width + 25px
+
+
+// Dropdown hover
+// ul.nav li.dropdown:hover > ul.dropdown-menu
+//   display: block
+
+// #main-container
+//   padding: 0 15px
+
+.row
+  .content-left
+    margin-top: 23px
+    +make-lg-column(2)
+  .content-main
+    +make-lg-column(8)

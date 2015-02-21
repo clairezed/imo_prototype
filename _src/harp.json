@@ -1,0 +1,9 @@
+{
+  "globals": {
+    "app_title": "In My Opinion",
+    "app_author": "Claire Zuliani",
+    "seo_description": "description",
+    "seo_keywords": "keymords",
+    "uri": "http://example.com"
+  }
+}
